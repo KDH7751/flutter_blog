@@ -1,16 +1,8 @@
 # flutter_blog
 
-A new Flutter project.
+플러터 블로그 만들기 클론코딩
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://www.youtube.com/watch?v=LAlrWQgt_rA&list=PL93mKxaRDidESjm_xR9BEKj5VJQMXy0tM
+해당 링크에 있는 내용을 기반으로 클론코딩 연습
