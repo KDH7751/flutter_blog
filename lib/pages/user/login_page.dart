@@ -5,6 +5,8 @@ import 'package:flutter_blog/pages/post/home_page.dart';
 import 'package:get/get.dart';
 
 class LoginPage extends StatelessWidget {
+  final _formKey = GlobalKey<FormState>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,10 +19,7 @@ class LoginPage extends StatelessWidget {
               height: 200,
               child: Text(
                 '로그인 페이지',
-                style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold
-                ),
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
             ),
             _loginForm()
@@ -32,13 +31,20 @@ class LoginPage extends StatelessWidget {
 
   Widget _loginForm() {
     return Form(
+      key: _formKey,
       child: Column(
         children: [
-          CustomTextFormField(hint: 'Username'),
-          CustomTextFormField(hint: 'Password'),
+          CustomTextFormField(
+            hint: 'Username',
+            funValidator: (value) {},
+          ),
+          CustomTextFormField(
+            hint: 'Password',
+            funValidator: (value) {},
+          ),
           CustomElevatedButton(
             text: '회원가입',
-            pageRoute: ()=> Get.to(HomePage()),
+            funPageRoute: () => Get.to(HomePage()),
           )
         ],
       ),
