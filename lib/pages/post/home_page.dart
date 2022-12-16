@@ -7,8 +7,18 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       drawer: _navigation(context),
       appBar: AppBar(),
-      body: Center(
-        child: Text('Home Page'),
+      body: ListView.separated(
+        itemCount: 20,
+        itemBuilder: (context, index) {
+          return ListTile(
+            onTap: () {},
+            title: Text('제목1'),
+            leading: Text('1'),
+          );
+        },
+        separatorBuilder: (context, index) {
+          return Divider();
+        },
       ),
     );
   }
@@ -29,10 +39,9 @@ class HomePage extends StatelessWidget {
                 child: Text(
                   '회원정보보기',
                   style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black54
-                  ),
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black54),
                 ),
               ),
               Divider(),
@@ -41,10 +50,9 @@ class HomePage extends StatelessWidget {
                 child: Text(
                   '로그아웃',
                   style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black54
-                  ),
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black54),
                 ),
               ),
               Divider(),
