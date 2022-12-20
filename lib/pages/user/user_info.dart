@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class WritePage extends StatelessWidget {
+class UserInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
       body: Center(
-        child: Text('글쓰기 화면'),
+        child: Text('회원정보보기'),
       ),
     );
   }
